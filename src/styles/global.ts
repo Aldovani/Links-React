@@ -40,7 +40,7 @@ background: transparent;
    align-items: center;
    justify-content: center;
    gap: 3rem;
-   padding: 3rem;
+   padding: 3rem 0;
  }
  `
  

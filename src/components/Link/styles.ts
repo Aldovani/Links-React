@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Link = styled.a`
   height: 100px;
-  width: 300px;
   color: #fefbfb;
 
   font: 500 1.5rem "Poppins";
 
+  width: 325px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,6 @@ export const Link = styled.a`
     );
   }
   &.linkedin {
-
     background: rgb(10, 102, 170);
     background: linear-gradient(
       90deg,
@@ -57,8 +56,12 @@ export const Link = styled.a`
     );
     background: hsla(221, 59%, 75%, 1);
 
-background: linear-gradient(90deg, hsla(221, 59%, 75%, 1) 0%, hsla(216, 40%, 58%, 1) 100%);
-}
+    background: linear-gradient(
+      90deg,
+      hsla(221, 59%, 75%, 1) 0%,
+      hsla(216, 40%, 58%, 1) 100%
+    );
+  }
   &.instagram {
     background: linear-gradient(
       45deg,
@@ -89,4 +92,19 @@ background: linear-gradient(90deg, hsla(221, 59%, 75%, 1) 0%, hsla(216, 40%, 58%
     cursor: not-allowed;
     pointer-events: none;
   }
+  @media (max-width: 600px) {
+    width: 250px;
+  }
+`;
+
+export const Container = styled.div`
+  display: flex;
+
+  align-content: center;
+  justify-content: center;
+  gap: 1.3rem;
+  max-width: 700px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
 `;

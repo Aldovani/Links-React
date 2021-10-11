@@ -7,7 +7,6 @@ const Header: React.FC = () => {
     <Container>
       <h1>Aldovani Henrique da Costa</h1>
       <h2>@AldovaniH</h2>
-     
     </Container>
   );
 };

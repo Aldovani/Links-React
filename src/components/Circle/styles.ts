@@ -7,14 +7,15 @@ export const Container = styled.div`
   top: 0;
   pointer-events: none;
   left: 0;
-  border: 5px solid white;
+  border: 5px solid #ffffff55;
   border-radius: 50%;
-
-  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff,
-    0 0 82px #fff;
 
   &.sm {
     width: 30px;
     height: 30px;
+  }
+
+  @media(max-width: 600px) {
+display: none;
   }
 `;

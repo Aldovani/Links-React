@@ -1,70 +1,13 @@
 import Particles from "react-tsparticles";
-import { Container, ParticulesContainer } from "./styles";
-import { Links } from "../../components/Link";
-import { Header } from "../../components/Header";
-import Circle from "../../components/Circle";
-const redes = [
-  {
-    title: "GitHub",
-    icon: "/github.svg",
-    url: "https://github.com/Aldovani",
-    className: "github ",
-  },
-  {
-    title: "Linkedin",
-    icon: "/linkedin.svg",
-    url: "https://www.linkedin.com/in/aldovani-henrique-da-costa-2a460b21a/",
-    className: "linkedin ",
-  },
-  {
-    title: "instagram",
-    icon: "/instagram.svg",
-    url: "https://www.instagram.com/aldovaniH/",
-    className: "instagram ",
-  },
-  {
-    title: "Twitter",
-    icon: "/twitter.svg",
-    url: "https://twitter.com/aldovaniH",
-    className: "twitter ",
-  },
-  {
-    title: "Portfolio",
-    icon: "/smile.svg",
-    url: "https://aldovani.vercel.app",
-    className: "disable portfolio ",
-  },
-  {
-    title: "Email",
-    icon: "/mail.svg",
-    url: "mailto:aldovaniHcosta@gmail.com",
-    className: "email ",
-  },
-];
-
-function App() {
+import { ParticlesContainer } from "./styles";
+export function Space() {
   return (
-    <>
-      <Header />
-
-      <Container>
-        {redes.map((rede, key) => (
-          <Links {...rede} key={key} />
-        ))}
-      </Container>
-      <Particless />
-      <Circle />
-    </>
-  );
-}
-
-function Particless() {
-  return (
-    <ParticulesContainer>
+    <ParticlesContainer>
       <Particles
         id="tsparticles"
         options={{
           fpsLimit: 120,
+          
           interactivity: {
             detectsOn: "canvas",
             events: {
@@ -72,10 +15,6 @@ function Particless() {
                 enable: true,
                 mode: "push",
               },
-              // onHover: {
-              //   enable: true,
-              //   mode: "bubble",
-              // },
               resize: true,
             },
             modes: {
@@ -129,8 +68,6 @@ function Particless() {
           detectRetina: true,
         }}
       />
-    </ParticulesContainer>
+    </ParticlesContainer>
   );
 }
-
-export default App;
